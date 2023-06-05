@@ -31,23 +31,27 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to right, aqua 30%, lightblue);
+    background: linear-gradient(to right, rgb(75, 0, 130), rgb(0, 255, 255), white);
   }
   
   .header-left {
     font-size: 24px;
     font-weight: bold;
-    color: aqua; /* Color for "Gordon" */
+    color: white; /* Color for "Gordon" */
     margin-right: auto;
   }
   
   .banner {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
-    color: aqua; /* Color for "Gordon" */
+    color: white; /* Color for "Gordon" */
     background-color: black; /* Banner background color */
     padding: 5px 10px; /* Adjust padding to desired banner size */
     margin-right: 10px; /* Add margin to separate the banner from the navigation links */
+  }
+  
+  nav {
+    height: 67px; /* Adjust the height as needed */
   }
   
   nav ul {
@@ -55,6 +59,8 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: 100%; /* Make the ul element take the full height of the nav */
+    align-items: center; /* Vertically center the list items */
   }
   
   nav ul li {
@@ -62,8 +68,10 @@
   }
   
   nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size as needed */
   }
   
   nav ul li a:hover {
@@ -75,35 +83,129 @@
     margin-top: 20px;
   }
   
-  .split-container {
+.split-container {
     display: flex;
-  }
-  
-  .split-left {
+    align-items: start;
+    margin-bottom: 40px;  /* This will ensure there is some space between each row */
+}
+
+.split-left {
     flex-basis: 30%;
-    border-right: 1px solid #333; /* Vertical line separating headers and content */
-    padding-right: 20px; /* Spacing between the line and the headers */
-  }
-  
-  .split-right {
+    border-right: 1px solid #333;
+    padding-right: 20px;
+}
+
+.split-right {
     flex-basis: 70%;
-    padding-left: 20px; /* Spacing between the line and the content */
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
+    padding-left: 20px;
+}
   
   section h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   
   .container {
     margin-bottom: 20px;
   }
+
+  .about-text {
+    font-size: 18px;
+    color: #444;
+}
+
+.email,
+.phone,
+.github {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+footer .socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .socials a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
+}
+
+footer p:last-of-type {
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .header-left,
+body.dark-mode .footer-content {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+body.dark-mode a {
+    color: #f8f9fa;
+}
+
+/* Ensuring all text is visible in dark mode */
+body.dark-mode p, 
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+    color: #f8f9fa;
+}
+
+/* Ensuring all links are visible in dark mode */
+body.dark-mode a {
+    color: #ffc107;  /* Using a bright color to ensure visibility */
+}
   
-  /* Responsive styles */
+
+/* Responsive styles */
   @media (max-width: 768px) {
     header {
       padding: 10px;

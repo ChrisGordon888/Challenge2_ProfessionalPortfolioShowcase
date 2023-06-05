@@ -2,65 +2,108 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <title>Professional Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Professional Portfolio</title>
 </head>
 
 <body>
     <header>
         <div class="header-left">
-            <div class="banner">Gordon</div>
-          </div>
+            <div class="banner">Coding Portfolio</div>
+        </div>
         <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <div class="split-container">
-          <div class="split-left">
-            <section id="about">
-              <div class="container">
-                <h2>About</h2>
-              </div>
-            </section>
-    
-            <section id="work">
-              <div class="container">
-                <h2>Work</h2>
-              </div>
-            </section>
-    
-            <section id="contact">
-              <div class="container">
-                <h2>Contact</h2>
-              </div>
-            </section>
-          </div>
-    
-          <div class="split-right">
-            <div class="container">
-              <!-- Content for About section goes here -->
+            <div class="split-left">
+                <section id="about">
+                    <h2>About</h2>
+                </section>
             </div>
-    
-            <div class="container">
-              <!-- Content for Work section goes here -->
-            </div>
-    
-            <div class="container">
-              <!-- Content for Contact section goes here -->
-            </div>
-          </div>
-        </div>
-      </main>
 
-  <script src="/assets/javascript/index.js"></script>
+            <div class="split-right">
+                <div class="container about-text">
+                    <!-- Your about text here -->
+                    <p class="about-text">
+                        My name is Christopher Gordon. My passion for innovation and creativity has led me to
+                        embrace technology through coding studies at UT Austin's Coding Bootcamp. This transition
+                        represents a quest to amalgamate technology, creativity, and curiosity, fueled by a desire
+                        to disrupt traditional boundaries that can often inhibit our most dynamic traits.
+
+                        As I navigate this path, I understand that technology can be a powerful conduit for creative
+                        expression. Through coding, I am leveraging technology to explore my unique creativity and
+                        share it within the tech industry and beyond. Despite challenges and initial uncertainties,
+                        each step has bolstered my abilities and inspired a deeper understanding of my potential.
+
+                        Now, with renewed confidence, I view creativity as a path to meaningful impact, extending
+                        beyond professional achievements. Through technology, I aim to inspire others to tap into
+                        their unique abilities, using this dynamic field as a platform for their creativity. With
+                        the support of a vibrant community, plentiful resources, and a dedication to continuous
+                        learning, I am excited to make a lasting contribution to the fields of tech and creativity.
+                    </p>
+                </div>
+            </div>
+        </div> <!-- Closing tag for first split-container -->
+
+        <div class="split-container">
+            <div class="split-left">
+                <section id="work">
+                    <h2>Work</h2>
+                </section>
+            </div>
+
+            <div class="split-right">
+                <div class="container work-content">
+                    <!-- Placeholder images -->
+                    <img src="path/to/image1" alt="Work Image 1">
+                    <!-- Repeat for as many images as needed -->
+                </div>
+            </div>
+        </div> <!-- Closing tag for second split-container -->
+
+        <div class="split-container">
+            <div class="split-left">
+                <section id="contact">
+                    <h2>Contact</h2>
+                </section>
+            </div>
+
+            <div class="split-right">
+                <div class="container contact-info">
+                    <!-- Contact info here -->
+                    <div class="contact-info">
+                        <p class="email">Email: [chris.c.gordon888@gmail.com]</p>
+                        <p class="phone">Phone: [936-828-6488]</p>
+                        <p class="github">
+                            GitHub: <a href="[Your GitHub Link]">[https://github.com/ChrisGordon888]</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Closing tag for third split-container -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Christopher Gordon</p>
+            <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
+        </div>
+    </footer>
+
+    <button id="topBtn">Top</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/javascript/index.js"></script>
 </body>
 
 </html>
