@@ -2,114 +2,125 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  h1,
-  h2,
-  h3 {
+}
+
+h1,
+h2,
+h3 {
     color: #333;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #333;
-  }
-  
-  /* Header styles */
-  header {
+}
+
+/* Header styles */
+header {
     display: flex;
     align-items: center;
     padding: 10px;
     background: linear-gradient(to right, rgb(75, 0, 130), rgb(0, 255, 255), white);
-  }
-  
-  .header-left {
+}
+
+.header-left {
     font-size: 24px;
     font-weight: bold;
-    color: white; /* Color for "Gordon" */
+    color: white;
+    /* Color for "Gordon" */
     margin-right: auto;
-  }
-  
-  .banner {
+}
+
+.banner {
     font-size: 36px;
     font-weight: bold;
-    color: white; /* Color for "Gordon" */
-    background-color: black; /* Banner background color */
-    padding: 5px 10px; /* Adjust padding to desired banner size */
-    margin-right: 10px; /* Add margin to separate the banner from the navigation links */
-  }
-  
-  nav {
-    height: 67px; /* Adjust the height as needed */
-  }
-  
-  nav ul {
+    color: white;
+    /* Color for "Coding Portfolio" */
+    background-color: black;
+    /* Banner background color */
+    padding: 5px 10px;
+    /* Adjust padding to desired banner size */
+    margin-right: 10px;
+    /* Add margin to separate the banner from the navigation links */
+}
+
+nav {
+    height: 67px;
+    /* Adjust the height as needed */
+}
+
+nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 100%; /* Make the ul element take the full height of the nav */
-    align-items: center; /* Vertically center the list items */
-  }
-  
-  nav ul li {
+    height: 100%;
+    /* Make the ul element take the full height of the nav */
+    align-items: center;
+    /* Vertically center the list items */
+}
+
+nav ul li {
     margin-right: 10px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: black;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 18px; /* Adjust the font size as needed */
-  }
-  
-  nav ul li a:hover {
+    font-size: 18px;
+    /* Adjust the font size as needed */
+}
+
+nav ul li a:hover {
     text-decoration: underline;
-  }
-  
-  /* Main section styles */
-  main {
+}
+
+/* Main section styles */
+main {
     margin-top: 20px;
-  }
-  
+}
+
 .split-container {
     display: flex;
     align-items: start;
-    margin-bottom: 40px;  /* This will ensure there is some space between each row */
+    margin-bottom: 40px;
+    /* This will ensure there is some space between each row */
 }
 
 .split-left {
-    flex-basis: 30%;
-    border-right: 1px solid #333;
-    padding-right: 20px;
+    flex-basis: 18%;
+    border-right: 3px solid #333;
+    padding-left: 67px;
+    padding-right: 24px;
 }
 
 .split-right {
     flex-basis: 70%;
     padding-left: 20px;
 }
-  
-  section h2 {
+
+section h2 {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  .container {
-    margin-bottom: 20px;
-  }
+}
 
-  .about-text {
+.container {
+    margin-bottom: 20px;
+}
+
+.about-text {
     font-size: 18px;
     color: #444;
 }
@@ -119,6 +130,39 @@
 .github {
     font-size: 16px;
     color: #666;
+}
+
+.contact-info p {
+    margin-bottom: 10px; /* Adjust the margin as desired */
+  }
+
+.about-text {
+    text-indent: 20px;
+    /* Adjust the indentation as desired */
+}
+
+/* Work images */
+.container.work-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* adjusts spacing */
+}
+
+.container.work-content img {
+    width: 180px;
+    /* adjust as necessary */
+    height: 180px;
+    /* adjust as necessary */
+    object-fit: cover;
+    /* maintains aspect ratio */
+    transition: transform 0.3s ease-in-out;
+    /* smooth transition */
+}
+
+.container.work-content img:hover {
+    transform: scale(1.1);
+    /* scales image up 10% */
 }
 
 /* Footer */
@@ -132,44 +176,12 @@ footer {
     bottom: 0;
 }
 
-footer .footer-content {
+.footer-content {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
-}
-
-footer h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-footer p {
-    margin-bottom: 0.5em;
-}
-
-footer .socials {
-    list-style: none;
-    padding: 0;
-    margin: 1em 0;
-}
-
-footer .socials li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-footer .socials a {
-    color: #343a40;
-    text-decoration: none;
-}
-
-footer .socials a:hover {
-    text-decoration: underline;
-}
-
-footer p:last-of-type {
-    margin-top: 1em;
-    font-size: 0.8em;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Dark Mode */
@@ -177,17 +189,16 @@ body.dark-mode {
     background-color: #343a40;
     color: #f8f9fa;
 }
-
-body.dark-mode .header-left,
-body.dark-mode .footer-content {
+  
+body.dark-mode .header-left {
     background-color: #f8f9fa;
     color: #343a40;
 }
-
+  
 body.dark-mode a {
     color: #f8f9fa;
 }
-
+  
 /* Ensuring all text is visible in dark mode */
 body.dark-mode p, 
 body.dark-mode h1, 
@@ -195,40 +206,47 @@ body.dark-mode h2,
 body.dark-mode h3, 
 body.dark-mode h4, 
 body.dark-mode h5, 
-body.dark-mode h6 {
+body.dark-mode h6,
+body.dark-mode footer {
     color: #f8f9fa;
 }
-
+  
 /* Ensuring all links are visible in dark mode */
 body.dark-mode a {
     color: #ffc107;  /* Using a bright color to ensure visibility */
 }
   
+/* Footer styles in dark mode */
+body.dark-mode .footer-content {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
 
 /* Responsive styles */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     header {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     nav ul li {
-      margin-right: 10px;
+        margin-right: 10px;
     }
-  
+
     section .content {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .section-image {
-      width: 100%;
-      margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
     }
-  
+
     .section-text {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .work-item {
-      width: calc(50% - 10px);
+        width: calc(50% - 10px);
     }
-  }
+}

@@ -1,6 +1,14 @@
 // Text fade
 $(document).ready(function() {
-    $(".about-text").hide().fadeIn(3333);
+    $(".about-text").hide().fadeIn(2333);
+});
+
+// $(document).ready(function() {
+//     $(".work-image").hide().fadeIn(2333);
+// });
+
+$(document).ready(function() {
+    $(".contact-info").hide().fadeIn(2333);
 });
 
 // Dark mode
@@ -28,24 +36,24 @@ $(document).ready(function() {
     });
 });
 
-// Code for the scrolling header color change function
-$(document).ready(function() {
-    $(window).scroll(function() {
-        let scroll = $(window).scrollTop();
-        if (scroll > 300) {
-            $(".header-left").css("background", "#343a40");
-        } else {
-            $(".header-left").css("background", "transparent"); 
-        }
-    });
-});
+// // Code for the scrolling header color change function
+// $(document).ready(function() {
+//     $(window).scroll(function() {
+//         let scroll = $(window).scrollTop();
+//         if (scroll > 300) {
+//             $(".header-left").css("background", "#343a40");
+//         } else {
+//             $(".header-left").css("background", "transparent"); 
+//         }
+//     });
+// });
 
-// Code for changing the banner content on page load
-$(document).ready(function() {
-    let bannerContent = ["Welcome to my Portfolio", "Christopher Gordon", "Web Developer", "Let's create something together"];
-    let i = 0;
-    setInterval(function() {
-        $("#banner-content").text(bannerContent[i]);
-        i = (i + 1) % bannerContent.length;
-    }, 2000);
-});
+// // Code for changing the banner content on page load
+// $(document).ready(function() {
+//     let bannerContent = ["Welcome to my Portfolio", "Christopher Gordon", "Web Developer", "Let's create something together"];
+//     let i = 0;
+//     setInterval(function() {
+//         $("#banner-content").text(bannerContent[i]);
+//         i = (i + 1) % bannerContent.length;
+//     }, 2000);
+// });

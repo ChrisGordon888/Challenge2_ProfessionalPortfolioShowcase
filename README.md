@@ -24,21 +24,21 @@ The Contact section provides various methods to get in touch with the developer.
 - Animated features and glowing sections implemented with JavaScript.
 
 ## Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ## Installation and Usage
-1. Clone the repository: `git clone https://github.com/your-username/portfolio.git`
+1. Clone the repository: `git clone`
 2. Open the index.html file in your preferred web browser.
 3. Explore the different sections of the portfolio, navigate through the links, and view the developer's work samples.
 4. Contact the developer using the provided contact information if you have any inquiries or opportunities.
 
 ## Demo
-A live demo of the portfolio can be accessed at [Demo Portfolio](https://your-portfolio-demo.com).
+A live demo of the portfolio can be accessed at [Demo Portfolio]().
 
 ## Screenshots
-![Portfolio Screenshot](./screenshots/portfolio-screenshot.png)
+![Portfolio Screenshot]()
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
