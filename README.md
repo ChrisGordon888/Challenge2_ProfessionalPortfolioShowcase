@@ -35,13 +35,12 @@ The Contact section provides various methods to get in touch with the developer.
 4. Contact the developer using the provided contact information if you have any inquiries or opportunities.
 
 ## Demo
-A live demo of the portfolio can be accessed at [Demo Portfolio]().
+A live demo of the portfolio can be accessed at: 
 
 ## Screenshots
-![Portfolio Screenshot]()
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License].
 
 ## Acknowledgements
 - The project was inspired by the need for an effective portfolio to showcase work samples to potential employers.
